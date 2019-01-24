@@ -2,23 +2,23 @@
 
 <h2>Burgers on deck</h2>
 
-<ul>
+<ol>
   {{#each burgers}}
     {{#unless devoured}}
       {{> burgers/burger-block devoured=true}}
     {{/unless}}
   {{/each}}
-</ul>
+</ol>
 
 <h2>Been Eaten</h2>
 
-<ul>
+<ol>
   {{#each burgers}}
     {{#if devoured}}
       {{> burgers/burger-block devoured=false}}
     {{/if}}
   {{/each}}
-</ul>
+</ol>
 
 <h2>New Burger</h2>
 <form class="create-form">
